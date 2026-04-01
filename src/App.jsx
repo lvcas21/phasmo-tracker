@@ -44,9 +44,12 @@ export default function App() {
     return eliminated;
   }, [evidenceFilters]);
 
+  const activeCount = Object.keys(evidenceFilters).length;
+
   return (
     <div className="app">
       <header className="app-header">
+        <div className="header-glow" />
         <h1>Phasmo Tracker</h1>
         <p>Identifica al fantasma descartando opciones</p>
       </header>
@@ -58,16 +61,27 @@ export default function App() {
             onToggleEvidence={handleToggleEvidence}
             onReset={handleReset}
           />
+          {activeCount > 0 && (
+            <div className="active-filters">
+              {activeCount} filtro{activeCount !== 1 ? 's' : ''} activo{activeCount !== 1 ? 's' : ''}
+            </div>
+          )}
         </aside>
 
         <main className="main-content">
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Buscar fantasma..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
+          <div className="search-wrapper">
+            <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+            <input
+              type="text"
+              className="search-input"
+              placeholder="Buscar fantasma..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
           <GhostGrid ghosts={ghosts} eliminatedIds={eliminatedIds} search={search} />
         </main>
       </div>

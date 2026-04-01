@@ -1,34 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+:root {
+  --bg-deep: #06060c;
+  --bg-surface: #0c0c16;
+  --bg-card: #10101c;
+  --bg-elevated: #161626;
+  --border: #1c1c32;
+  --border-hover: #2e2e50;
+  --text: #c8c8d8;
+  --text-muted: #6e6e88;
+  --text-dim: #4a4a62;
+  --accent: #6ee7b7;
+  --accent-dim: #2d6b54;
+  --danger: #f87171;
+  --danger-dim: #5c1a1a;
+  --highlight: #a78bfa;
+  --highlight-dim: rgba(167, 139, 250, 0.08);
+  --font-display: 'Creepster', cursive;
+  --font-body: 'IBM Plex Sans', sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #0a0a0f;
+  background: var(--bg-deep);
+  font-family: var(--font-body);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(167, 139, 250, 0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 100%, rgba(110, 231, 183, 0.03) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 #root {
   width: 100%;
   max-width: 100%;
   margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0f;
+  background: var(--bg-deep);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e1e30;
+  background: var(--border);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2a2a45;
+  background: var(--border-hover);
+}
+
+::selection {
+  background: rgba(167, 139, 250, 0.3);
+  color: #fff;
 }

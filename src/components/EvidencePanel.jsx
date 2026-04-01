@@ -23,7 +23,7 @@ export default function EvidencePanel({ evidenceFilters, onToggleEvidence, onRes
                 const idx = STATES.indexOf(state);
                 const next = STATES[(idx + 1) % STATES.length];
                 onToggleEvidence(ev.id, next);
-              }}
+              }}ø
               title={
                 state === 'neutral'
                   ? 'Click: confirmar'
