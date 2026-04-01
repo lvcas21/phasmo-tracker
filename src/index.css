@@ -7,21 +7,22 @@
 }
 
 :root {
-  --bg-deep: #06060c;
-  --bg-surface: #0c0c16;
-  --bg-card: #10101c;
-  --bg-elevated: #161626;
-  --border: #1c1c32;
-  --border-hover: #2e2e50;
-  --text: #c8c8d8;
-  --text-muted: #6e6e88;
-  --text-dim: #4a4a62;
+  --bg-deep: #080810;
+  --bg-surface: #0e0e1a;
+  --bg-card: #131320;
+  --bg-elevated: #1a1a2e;
+  --border: #252540;
+  --border-hover: #3a3a5c;
+  --text: #d8d8e8;
+  --text-secondary: #a8a8c0;
+  --text-muted: #8080a0;
+  --text-dim: #585878;
   --accent: #6ee7b7;
   --accent-dim: #2d6b54;
   --danger: #f87171;
   --danger-dim: #5c1a1a;
-  --highlight: #a78bfa;
-  --highlight-dim: rgba(167, 139, 250, 0.08);
+  --highlight: #b49cff;
+  --highlight-dim: rgba(180, 156, 255, 0.1);
   --font-display: 'Creepster', cursive;
   --font-body: 'IBM Plex Sans', sans-serif;
 }
@@ -41,8 +42,8 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse at 20% 0%, rgba(167, 139, 250, 0.04) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 100%, rgba(110, 231, 183, 0.03) 0%, transparent 60%);
+    radial-gradient(ellipse at 20% 0%, rgba(180, 156, 255, 0.05) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 100%, rgba(110, 231, 183, 0.04) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
@@ -73,6 +74,6 @@ body::before {
 }
 
 ::selection {
-  background: rgba(167, 139, 250, 0.3);
+  background: rgba(180, 156, 255, 0.3);
   color: #fff;
 }
