@@ -8,7 +8,7 @@
 .app-header {
   position: relative;
   text-align: center;
-  padding: 2.5rem 1rem 2rem;
+  padding: 2.8rem 1rem 2.2rem;
   border-bottom: 1px solid var(--border);
   overflow: hidden;
 }
@@ -27,7 +27,7 @@
 .app-header h1 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: 400;
   color: var(--highlight);
   letter-spacing: 4px;
@@ -44,7 +44,7 @@
 .app-header p {
   margin: 0.5rem 0 0;
   color: var(--text-muted);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 300;
   letter-spacing: 1px;
 }
@@ -52,51 +52,51 @@
 .app-layout {
   display: flex;
   gap: 0;
-  min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 140px);
 }
 
 /* ===== SIDEBAR ===== */
 .sidebar {
-  width: 260px;
-  min-width: 260px;
+  width: 280px;
+  min-width: 280px;
   background: var(--bg-surface);
   border-right: 1px solid var(--border);
-  padding: 1.5rem;
+  padding: 1.6rem;
   display: flex;
   flex-direction: column;
 }
 
 .evidence-panel h2 {
   font-family: var(--font-body);
-  font-size: 0.7rem;
+  font-size: 0.78rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   color: var(--text-muted);
-  margin: 0 0 1.2rem;
-  padding-bottom: 0.6rem;
+  margin: 0 0 1.3rem;
+  padding-bottom: 0.7rem;
   border-bottom: 1px solid var(--border);
 }
 
 .evidence-list {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.4rem;
 }
 
 .evidence-btn {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.75rem;
   width: 100%;
-  padding: 0.65rem 0.9rem;
+  padding: 0.72rem 1rem;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--bg-card);
   color: var(--text-muted);
   cursor: pointer;
   font-family: var(--font-body);
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   font-weight: 400;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   text-align: left;
@@ -124,13 +124,13 @@
 }
 
 .evidence-icon {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1rem;
   border-radius: 4px;
 }
 
@@ -148,15 +148,15 @@
 
 .reset-btn {
   width: 100%;
-  margin-top: 1.2rem;
-  padding: 0.6rem;
+  margin-top: 1.3rem;
+  padding: 0.7rem;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: transparent;
   color: var(--text-dim);
   cursor: pointer;
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 0.82rem;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -170,9 +170,9 @@
 }
 
 .active-filters {
-  margin-top: 0.8rem;
-  padding: 0.5rem 0.9rem;
-  font-size: 0.72rem;
+  margin-top: 0.9rem;
+  padding: 0.55rem 1rem;
+  font-size: 0.8rem;
   color: var(--highlight);
   background: var(--highlight-dim);
   border-radius: 6px;
@@ -184,36 +184,36 @@
 /* ===== MAIN CONTENT ===== */
 .main-content {
   flex: 1;
-  padding: 1.5rem;
+  padding: 1.6rem;
   overflow-y: auto;
 }
 
 /* ===== SEARCH ===== */
 .search-wrapper {
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 
 .search-icon {
   position: absolute;
-  left: 1rem;
+  left: 1.1rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   color: var(--text-dim);
   pointer-events: none;
 }
 
 .search-input {
   width: 100%;
-  padding: 0.75rem 1rem 0.75rem 2.8rem;
+  padding: 0.85rem 1.1rem 0.85rem 3rem;
   border: 1px solid var(--border);
   border-radius: 10px;
   background: var(--bg-card);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 0.88rem;
+  font-size: 0.97rem;
   font-weight: 300;
   outline: none;
   transition: all 0.25s ease;
@@ -235,23 +235,23 @@
 }
 
 .ghost-count {
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   color: var(--text-dim);
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
   font-weight: 300;
   letter-spacing: 0.3px;
 }
 
 .ghost-count strong {
   color: var(--highlight);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
 .ghost-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 0.7rem;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 0.8rem;
 }
 
 /* ===== GHOST CARD ===== */
@@ -259,7 +259,7 @@
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 1.1rem 1.3rem;
+  padding: 1.2rem 1.4rem;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
@@ -316,21 +316,21 @@
 .ghost-card-header {
   display: flex;
   align-items: baseline;
-  gap: 0.6rem;
-  margin-bottom: 0.6rem;
+  gap: 0.65rem;
+  margin-bottom: 0.65rem;
 }
 
 .ghost-card-header h3 {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #ebebf0;
   letter-spacing: 0.3px;
 }
 
 .ghost-name-en {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: var(--text-dim);
   font-style: italic;
   font-weight: 300;
@@ -338,15 +338,15 @@
 
 .ghost-evidences {
   display: flex;
-  gap: 0.35rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.75rem;
 }
 
 .evidence-tag {
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 500;
-  padding: 0.2rem 0.55rem;
+  padding: 0.22rem 0.6rem;
   background: var(--highlight-dim);
   border: 1px solid rgba(167, 139, 250, 0.12);
   border-radius: 5px;
@@ -357,15 +357,15 @@
 
 .ghost-summary {
   margin: 0;
-  font-size: 0.84rem;
+  font-size: 0.93rem;
   color: var(--text-muted);
   line-height: 1.5;
   font-weight: 300;
 }
 
 .ghost-detail {
-  margin-top: 0.9rem;
-  padding-top: 0.9rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
   border-top: 1px solid var(--border);
   animation: detailSlide 0.2s ease-out;
 }
@@ -383,7 +383,7 @@
 
 .ghost-detail p {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.65;
   font-weight: 300;
@@ -391,8 +391,8 @@
 
 .expand-hint {
   display: inline-block;
-  margin-top: 0.6rem;
-  font-size: 0.65rem;
+  margin-top: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 600;
   color: var(--text-dim);
   text-transform: uppercase;
@@ -407,7 +407,7 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .app-header h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .app-layout {
@@ -419,7 +419,7 @@
     min-width: unset;
     border-right: none;
     border-bottom: 1px solid var(--border);
-    padding: 1rem;
+    padding: 1.1rem;
   }
 
   .evidence-list {
@@ -429,7 +429,7 @@
 
   .evidence-btn {
     flex: 1;
-    min-width: 130px;
+    min-width: 140px;
   }
 
   .evidence-btn:hover {
@@ -441,6 +441,6 @@
   }
 
   .main-content {
-    padding: 1rem;
+    padding: 1.1rem;
   }
 }
