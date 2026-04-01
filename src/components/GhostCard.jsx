@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { EVIDENCES, BEHAVIORS } from '../data/ghosts';
+import { EVIDENCES } from '../data/ghosts';
 
 const evidenceMap = Object.fromEntries(EVIDENCES.map((e) => [e.id, e.name]));
-const behaviorMap = Object.fromEntries(BEHAVIORS.map((b) => [b.id, b.label]));
 
 export default function GhostCard({ ghost, eliminated }) {
   const [expanded, setExpanded] = useState(false);
@@ -30,16 +29,6 @@ export default function GhostCard({ ghost, eliminated }) {
       {expanded && (
         <div className="ghost-detail">
           <p>{ghost.detail}</p>
-          {ghost.behaviors.length > 0 && (
-            <div className="ghost-behaviors">
-              <strong>Pistas clave:</strong>
-              <ul>
-                {ghost.behaviors.map((bId) => (
-                  <li key={bId}>{behaviorMap[bId]}</li>
-                ))}
-              </ul>
-            </div>
-          )}
         </div>
       )}
 

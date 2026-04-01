@@ -1,13 +1,11 @@
 import { useState, useMemo } from 'react';
 import { ghosts } from './data/ghosts';
 import EvidencePanel from './components/EvidencePanel';
-import BehaviorPanel from './components/BehaviorPanel';
 import GhostGrid from './components/GhostGrid';
 import './App.css';
 
 export default function App() {
   const [evidenceFilters, setEvidenceFilters] = useState({});
-  const [activeBehaviors, setActiveBehaviors] = useState([]);
 
   const handleToggleEvidence = (id, state) => {
     setEvidenceFilters((prev) => {
@@ -21,15 +19,8 @@ export default function App() {
     });
   };
 
-  const handleToggleBehavior = (id) => {
-    setActiveBehaviors((prev) =>
-      prev.includes(id) ? prev.filter((b) => b !== id) : [...prev, id]
-    );
-  };
-
   const handleReset = () => {
     setEvidenceFilters({});
-    setActiveBehaviors([]);
   };
 
   const eliminatedIds = useMemo(() => {
@@ -46,17 +37,10 @@ export default function App() {
           return;
         }
       }
-
-      for (const behaviorId of activeBehaviors) {
-        if (!ghost.behaviors.includes(behaviorId)) {
-          eliminated.add(ghost.id);
-          return;
-        }
-      }
     });
 
     return eliminated;
-  }, [evidenceFilters, activeBehaviors]);
+  }, [evidenceFilters]);
 
   return (
     <div className="app">
@@ -75,10 +59,6 @@ export default function App() {
         </aside>
 
         <main className="main-content">
-          <BehaviorPanel
-            activeBehaviors={activeBehaviors}
-            onToggleBehavior={handleToggleBehavior}
-          />
           <GhostGrid ghosts={ghosts} eliminatedIds={eliminatedIds} />
         </main>
       </div>
