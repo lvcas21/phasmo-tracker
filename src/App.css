@@ -130,6 +130,27 @@
   overflow-y: auto;
 }
 
+.search-input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #1e1e30;
+  border-radius: 6px;
+  background: #12121e;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.search-input::placeholder {
+  color: #555;
+}
+
+.search-input:focus {
+  border-color: #8b9dc3;
+}
+
 /* ===== BEHAVIOR PANEL ===== */
 .behavior-panel {
   margin-bottom: 1.5rem;

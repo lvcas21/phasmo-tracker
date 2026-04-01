@@ -6,6 +6,7 @@ import './App.css';
 
 export default function App() {
   const [evidenceFilters, setEvidenceFilters] = useState({});
+  const [search, setSearch] = useState('');
 
   const handleToggleEvidence = (id, state) => {
     setEvidenceFilters((prev) => {
@@ -21,6 +22,7 @@ export default function App() {
 
   const handleReset = () => {
     setEvidenceFilters({});
+    setSearch('');
   };
 
   const eliminatedIds = useMemo(() => {
@@ -59,7 +61,14 @@ export default function App() {
         </aside>
 
         <main className="main-content">
-          <GhostGrid ghosts={ghosts} eliminatedIds={eliminatedIds} />
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Buscar fantasma..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <GhostGrid ghosts={ghosts} eliminatedIds={eliminatedIds} search={search} />
         </main>
       </div>
     </div>

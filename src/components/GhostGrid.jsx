@@ -1,8 +1,12 @@
 import GhostCard from './GhostCard';
 
-export default function GhostGrid({ ghosts, eliminatedIds }) {
-  const visible = ghosts.filter((g) => !eliminatedIds.has(g.id));
-  const eliminated = ghosts.filter((g) => eliminatedIds.has(g.id));
+export default function GhostGrid({ ghosts, eliminatedIds, search }) {
+  const term = search.toLowerCase();
+  const matched = ghosts.filter(
+    (g) => g.name.toLowerCase().includes(term) || g.nameEn.toLowerCase().includes(term)
+  );
+  const visible = matched.filter((g) => !eliminatedIds.has(g.id));
+  const eliminated = matched.filter((g) => eliminatedIds.has(g.id));
 
   return (
     <div className="ghost-grid-wrapper">
