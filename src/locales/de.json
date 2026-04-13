@@ -1,0 +1,157 @@
+{
+  "header": {
+    "title": "Phasmo Tracker",
+    "subtitle": "Identifiziere den Geist durch Ausschlussverfahren"
+  },
+  "search": {
+    "placeholder": "Geist suchen..."
+  },
+  "filters": {
+    "active_one": "{{count}} aktiver Filter",
+    "active_other": "{{count}} aktive Filter"
+  },
+  "evidence": {
+    "title": "Beweise",
+    "reset": "Alles zurücksetzen",
+    "tooltip_confirm": "Klick: bestätigen",
+    "tooltip_discard": "Klick: ausschließen",
+    "tooltip_reset": "Klick: zurücksetzen",
+    "emf": "EMF Stufe 5",
+    "spiritBox": "Spirit Box",
+    "ultraviolet": "Ultraviolett",
+    "orbs": "Geisterkugeln",
+    "writing": "Geisterschrift",
+    "freezing": "Gefriertemperatur",
+    "dots": "DOTS"
+  },
+  "ghostGrid": {
+    "possible_one": "{{count}} möglicher Geist",
+    "possible_other": "{{count}} mögliche Geister"
+  },
+  "ghostCard": {
+    "detail": "Detail",
+    "less": "Weniger"
+  },
+  "ghosts": {
+    "spirit": {
+      "name": "Geist",
+      "summary": "Braucht 3 Minuten zum Jagen nach Räucherstäbchen.",
+      "detail": "Der \"Standard\"-Geist. Hat keine andere spezielle Fähigkeit. Normalerweise verhindert Räucherstäbchen eine Jagd für 90 Sekunden; beim Geist sind es 180 Sekunden. Wenn du ohne Beweise spielst und Räucherstäbchen testest, benutze eine Stoppuhr."
+    },
+    "wraith": {
+      "name": "Phantom",
+      "summary": "Tritt nicht auf Salz.",
+      "detail": "Schwebt buchstäblich über Salz und hinterlässt nie einen Fußabdruck (kann aber Fingerabdrücke an Türen hinterlassen). Kann sich direkt zu einem zufälligen Spieler teleportieren (hinterlässt einen EMF Stufe 2 oder 5 an deinem Standort). Wenn du plötzlich Aktivität weit von seinem Raum entfernt hast, könnte es ein Phantom sein."
+    },
+    "phantom": {
+      "name": "Phantom",
+      "summary": "Sehr langsames Blinken und erscheint nicht auf Fotos.",
+      "detail": "Während einer Jagd ist er viel länger unsichtbar als andere Geister. Wenn du während eines Events ein Foto machst, verschwindet der Geist sofort, aber das Foto ist gültig. Ihn anzusehen senkt deine geistige Gesundheit extrem schnell."
+    },
+    "poltergeist": {
+      "name": "Poltergeist",
+      "summary": "Wirft viele Gegenstände mit großer Kraft.",
+      "detail": "Wirft Gegenstände viel weiter und mit mehr Kraft. Die \"Poltergeist-Bombe\": kann mehrere Gegenstände gleichzeitig werfen. Jeder geworfene Gegenstand in deiner Nähe entzieht 2% deiner geistigen Gesundheit. Wenn du einen Haufen Gegenstände in seinem Raum machst und alle gleichzeitig fliegen, ist es ein Poltergeist."
+    },
+    "banshee": {
+      "name": "Banshee",
+      "summary": "Stößt einen speziellen Schrei aus und verfolgt ein einzelnes Ziel.",
+      "detail": "Der spezielle Schrei ist nur mit dem Parabolmikrofon hörbar. Zu Beginn der Runde wählt sie einen einzelnen Spieler. Sie jagt nur basierend auf der geistigen Gesundheit dieses Spielers. Während einer Jagd ignoriert sie andere Spieler, um das Ziel zu töten."
+    },
+    "jinn": {
+      "name": "Dschinn",
+      "summary": "Beschleunigt bei eingeschaltetem Sicherungskasten; schaltet ihn nie aus.",
+      "detail": "Schaltet nie direkt den Sicherungskasten aus. Wenn er dich von weitem in einem Flur mit Licht sieht, rast er auf dich zu, kehrt aber bei etwa 3 Metern zur normalen Geschwindigkeit zurück. Wenn du den Sicherungskasten ausschaltest, wird er ein normaler Geist."
+    },
+    "mare": {
+      "name": "Nachtmahr",
+      "summary": "Schaltet das Licht sofort aus, wenn man es einschaltet.",
+      "detail": "Hasst Licht. Hat eine höhere Wahrscheinlichkeit, Glühbirnen bei einem Event zu zerstören. Im Dunkeln kann er bei 60% geistiger Gesundheit jagen. Wenn das Licht an ist, muss er warten, bis du auf 40% fällst. Er wird nie von selbst ein Licht einschalten."
+    },
+    "revenant": {
+      "name": "Wiedergänger",
+      "summary": "Langsam wenn er dich nicht erkennt, sehr schnell wenn er dich sieht.",
+      "detail": "Wenn er nicht weiß, wo du bist, geht er mit 1.0 m/s. Sobald er Sichtkontakt hat oder dich hört, beschleunigt er auf 3.0 m/s zu deiner letzten bekannten Position. Wenn du die Sichtlinie unterbrichst, wird er langsam wieder langsamer."
+    },
+    "shade": {
+      "name": "Schatten",
+      "summary": "Sehr inaktiv.",
+      "detail": "Extrem schüchtern. KANN KEINE Jagd starten, wenn jemand im selben Raum ist. Jagt erst, wenn die durchschnittliche geistige Gesundheit auf 35% fällt (andere jagen bei 50%). Er zwingt dich, fast wahnsinnig zu sein, um seine Existenz zu beweisen."
+    },
+    "demon": {
+      "name": "Dämon",
+      "summary": "Jagt sehr oft.",
+      "detail": "Jagt normalerweise bei 70% geistiger Gesundheit, hat aber eine passive Fähigkeit, bei 100% zu jagen. Das Kruzifix ist super effektiv gegen ihn (5 Meter statt 3). Räucherstäbchen verhindert die Jagd nur 60 Sekunden (statt 90)."
+    },
+    "yurei": {
+      "name": "Yurei",
+      "summary": "Schließt Türen mit einem \"Klick\".",
+      "detail": "Hat eine Fähigkeit, die 15% geistige Gesundheit von allen in der Nähe entzieht. Wenn er sie benutzt, schließt er schnell eine Tür. Wenn du Räucherstäbchen in seinem Raum benutzt, bleibt er 90 Sekunden gefangen."
+    },
+    "oni": {
+      "name": "Oni",
+      "summary": "Häufiges Blinken.",
+      "detail": "Das Gegenteil des Phantoms. Während einer Jagd ist er sehr sichtbar. Extrem aktiv, wenn Spieler in der Nähe sind. Der einzige Geist, der nie das paranormale Ereignis mit der \"Luftwolke\" oder dem \"weißen Rauch\" auslöst. Wenn du den Rauch frontal siehst, schließe den Oni aus."
+    },
+    "yokai": {
+      "name": "Yokai",
+      "summary": "Sehr taub und blind.",
+      "detail": "Kann deine Taschenlampe, Stimme oder Ausrüstung nur erkennen, wenn du während einer Jagd etwa 2.5 Meter von ihm entfernt bist. Wenn du jedoch viel in seiner Nähe außerhalb einer Jagd sprichst, wird er wütend und kann bei 80% jagen."
+    },
+    "hantu": {
+      "name": "Hantu",
+      "summary": "Variable Geschwindigkeit je nach Temperatur.",
+      "detail": "Liebt Kälte und schaltet daher nie den Sicherungskasten ein. Während einer Jagd haucht er bei ausgeschaltetem Sicherungskasten eisigen Atem. Sehr schnell in kalten Räumen, aber super langsam in warmen Häusern. Beschleunigt nicht durch Sichtkontakt wie andere Geister."
+    },
+    "goryo": {
+      "name": "Goryo",
+      "summary": "Wechselt nicht seinen Lieblingsraum.",
+      "detail": "Geht fast nie weit von seiner Zone weg. Der DOTS-Beweis kann nur durch eine Videokamera gesehen werden und nur wenn niemand physisch im Raum ist. Mit bloßem Auge wirst du ihn nie sehen."
+    },
+    "myling": {
+      "name": "Myling",
+      "summary": "Unhörbare Schritte außerhalb des Taschenlampen-Flackerbereichs.",
+      "detail": "Die Schritte eines normalen Geistes sind bei 20 Metern hörbar. Der Myling ist schleichend; seine Schritte sind nur bei 10 Metern hörbar, genau die Distanz, bei der deine Taschenlampe zu flackern beginnt. Wenn deine Taschenlampe flackert, bevor du Schritte hörst, ist es ein Myling."
+    },
+    "onryo": {
+      "name": "Onryo",
+      "summary": "Kerzen wirken wie ein Kruzifix.",
+      "detail": "Hat Angst vor Feuer. Eine brennende Kerze wirkt wie ein Kruzifix im 4-Meter-Radius. Wenn er 3 Kerzen ausbläst (ohne weiteres Feuer oder Kruzifixe), löst er eine Pflichtjagd aus. Jagt normalerweise bei 60%."
+    },
+    "twins": {
+      "name": "Zwillinge",
+      "summary": "Einer schneller, einer langsamer.",
+      "detail": "Es ist eigentlich ein Geist und eine \"Interaktionsentität\", die ihm folgt. Sie können fast gleichzeitig in verschiedenen Räumen agieren (Twinteractions). Wenn er vom Hauptraum aus jagt, geht er mit 90% der normalen Geschwindigkeit. Wenn der \"falsche\" Zwilling jagt, geht er mit 110%."
+    },
+    "raiju": {
+      "name": "Raiju",
+      "summary": "Beschleunigt mit elektronischer Ausrüstung.",
+      "detail": "Jagt bei 65% geistiger Gesundheit, wenn elektronische Geräte in seiner Nähe eingeschaltet sind. Während einer Jagd gibt ihm jedes eingeschaltete Gerät einen enormen Geschwindigkeitsschub. Seine Störreichweite ist größer (15 Meter) als bei anderen (10 Meter)."
+    },
+    "obake": {
+      "name": "Obake",
+      "summary": "Wechselt das Modell während einer Jagd.",
+      "detail": "Während einer Jagd gibt es eine 6.66% Chance bei jedem Blinken, dass er kurz das Modell wechselt. Mit Beweisen: 25% Chance, KEINE Fingerabdrücke zu hinterlassen. Seine Abdrücke können 6 Finger (an Türen) oder 2 (an Schaltern) haben. Verschwinden in 1 Minute statt 2."
+    },
+    "mimic": {
+      "name": "Mimik",
+      "summary": "Zeigt immer Geisterkugeln.",
+      "detail": "Der einzige Geist mit 4 Beweisen (die Kugeln sind sein \"falscher\" passiver Beweis, immer vorhanden). Während der Runde wählt er einen zufälligen Geist und kopiert absolut alles. Kann den kopierten Geist alle 30 Sekunden oder 2 Minuten wechseln."
+    },
+    "moroi": {
+      "name": "Moroi",
+      "summary": "Räucherstäbchen blendet ihn 7.5 Sek. Sehr schnell bei niedriger Gesundheit.",
+      "detail": "Seine Grundgeschwindigkeit steigt, wenn die geistige Gesundheit des Teams sinkt. Bei 0% ist er der schnellste Basis-Geist. Wenn du seine Antworten an der Spirit Box hörst, \"verflucht\" er dich. Deine geistige Gesundheit sinkt doppelt so schnell. Nur Tabletten brechen den Fluch."
+    },
+    "deogen": {
+      "name": "Deogen",
+      "summary": "Findet dich immer, sehr langsam wenn nah.",
+      "detail": "Jagt bei 40% geistiger Gesundheit. Verstecke dich nie vor einem Deogen, denn er hat \"Wallhack\". Zu Beginn einer Jagd rast er zu dir, aber bei wenigen Metern verlangsamt er auf 0.4 m/s. Zum Überleben musst du ihn \"kiten\" (Kreise in offenen Räumen). An der Spirit Box hat er ein sehr charakteristisches Keuchen."
+    },
+    "thaye": {
+      "name": "Thaye",
+      "summary": "Am Anfang schnell, altert und wird langsam.",
+      "detail": "Der \"Wettlauf gegen die Zeit\"-Geist. Beim Betreten des Hauses jagt er bei 75% und ist außergewöhnlich schnell. Wenn du in seiner Nähe bist, \"altert\" er alle 1-2 Minuten. Mit jedem Altern sinkt seine Jagdschwelle und Geschwindigkeit drastisch. Am Ende der Runde ist er der langsamste Geist."
+    }
+  }
+}

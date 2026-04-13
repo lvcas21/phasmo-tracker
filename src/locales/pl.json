@@ -1,0 +1,159 @@
+{
+  "header": {
+    "title": "Phasmo Tracker",
+    "subtitle": "Zidentyfikuj ducha wykluczając opcje"
+  },
+  "search": {
+    "placeholder": "Szukaj ducha..."
+  },
+  "filters": {
+    "active_one": "{{count}} aktywny filtr",
+    "active_few": "{{count}} aktywne filtry",
+    "active_many": "{{count}} aktywnych filtrów"
+  },
+  "evidence": {
+    "title": "Dowody",
+    "reset": "Resetuj wszystko",
+    "tooltip_confirm": "Klik: potwierdź",
+    "tooltip_discard": "Klik: wyklucz",
+    "tooltip_reset": "Klik: resetuj",
+    "emf": "EMF Poziom 5",
+    "spiritBox": "Spirit Box",
+    "ultraviolet": "Ultrafiolet",
+    "orbs": "Ghost Orbs",
+    "writing": "Pismo Duchów",
+    "freezing": "Temp. Mrożąca",
+    "dots": "DOTS"
+  },
+  "ghostGrid": {
+    "possible_one": "{{count}} możliwy duch",
+    "possible_few": "{{count}} możliwe duchy",
+    "possible_many": "{{count}} możliwych duchów"
+  },
+  "ghostCard": {
+    "detail": "Szczegóły",
+    "less": "Mniej"
+  },
+  "ghosts": {
+    "spirit": {
+      "name": "Duch",
+      "summary": "Potrzebuje 3 minut na polowanie po kadzidłe.",
+      "detail": "\"Standardowy\" duch. Nie ma innych specjalnych umiejętności. Normalnie kadzidło zapobiega polowaniu na 90 sekund; dla Ducha to 180 sekund. Jeśli grasz bez dowodów i testujesz kadzidło, użyj stopera."
+    },
+    "wraith": {
+      "name": "Upiór",
+      "summary": "Nie depcze soli.",
+      "detail": "Dosłownie unosi się nad solą, nigdy nie zostawiając śladów stóp (ale może zostawiać odciski palców na drzwiach). Może się teleportować bezpośrednio do losowego gracza (zostawiając EMF poziomu 2 lub 5 w twojej lokalizacji). Jeśli nagle pojawia się aktywność daleko od jego pokoju, to może być Upiór."
+    },
+    "phantom": {
+      "name": "Fantom",
+      "summary": "Bardzo wolne miganie i nie pojawia się na zdjęciach.",
+      "detail": "Podczas polowania jest niewidoczny znacznie dłużej niż inne duchy. Jeśli zrobisz zdjęcie podczas wydarzenia, duch zniknie natychmiast, ale zdjęcie będzie ważne. Patrzenie na niego szybko obniża poczytalność."
+    },
+    "poltergeist": {
+      "name": "Poltergeist",
+      "summary": "Rzuca wieloma przedmiotami z dużą siłą.",
+      "detail": "Rzuca przedmiotami dalej i z większą siłą. \"Bomba Poltergeista\": może rzucić wieloma przedmiotami naraz. Każdy rzucony w pobliżu przedmiot zabiera 2% poczytalności. Jeśli zrobisz stos przedmiotów w jego pokoju i wszystkie polecą naraz, to Poltergeist."
+    },
+    "banshee": {
+      "name": "Banshee",
+      "summary": "Wydaje specjalny krzyk i ściga jeden cel.",
+      "detail": "Specjalny krzyk słyszalny tylko przez Mikrofon Paraboliczny. Na początku meczu wybiera jednego gracza. Poluje na podstawie poczytalności tego gracza. Podczas polowania ignoruje innych graczy, by zabić cel."
+    },
+    "jinn": {
+      "name": "Dżinn",
+      "summary": "Przyspiesza przy włączonym bezpieczniku; nie wyłącza go.",
+      "detail": "Nigdy nie wyłącza bezpiecznika bezpośrednio. Jeśli zobaczy cię z daleka na korytarzu z włączonym światłem, pędzi ku tobie, ale zwalnia do normalnej prędkości na ~3 metry. Jeśli wyłączysz bezpiecznik, staje się standardowym duchem."
+    },
+    "mare": {
+      "name": "Zmora",
+      "summary": "Natychmiast wyłącza światło po włączeniu.",
+      "detail": "Nienawidzi światła. Większe prawdopodobieństwo rozbicia żarówek podczas wydarzenia. W ciemności może polować przy 60% poczytalności. Przy włączonym świetle musi czekać do 40%. Nigdy sam nie włączy światła."
+    },
+    "revenant": {
+      "name": "Rewenant",
+      "summary": "Wolny gdy cię nie wykrywa, bardzo szybki gdy cię widzi.",
+      "detail": "Jeśli nie wie, gdzie jesteś, chodzi z prędkością 1.0 m/s. W chwili kontaktu wzrokowego przyspiesza do 3.0 m/s do twojej ostatniej pozycji. Po przerwaniu linii wzroku stopniowo zwalnia."
+    },
+    "shade": {
+      "name": "Cień",
+      "summary": "Bardzo nieaktywny.",
+      "detail": "Ekstremalnie nieśmiały. NIE MOŻE rozpocząć polowania, jeśli ktoś jest w tym samym pokoju. Poluje dopiero przy średniej poczytalności 35% (inne przy 50%). Zmusi cię do niemal szaleństwa, by udowodnić swoje istnienie."
+    },
+    "demon": {
+      "name": "Demon",
+      "summary": "Poluje bardzo często.",
+      "detail": "Normalnie poluje przy 70% poczytalności, ale pasywna umiejętność pozwala polować przy 100%. Krucyfiks jest super skuteczny (zasięg 5 metrów zamiast 3). Kadzidło zapobiega polowaniu tylko na 60 sekund (zamiast 90)."
+    },
+    "yurei": {
+      "name": "Yurei",
+      "summary": "Zamyka drzwi z \"kliknięciem\".",
+      "detail": "Ma umiejętność zabierającą 15% poczytalności wszystkim w pobliżu. Przy użyciu szybko zamyka drzwi. Kadzidło w jego pokoju uwięzi go na 90 sekund."
+    },
+    "oni": {
+      "name": "Oni",
+      "summary": "Częste miganie.",
+      "detail": "Przeciwieństwo Fantoma. Podczas polowania jest bardzo widoczny. Ekstremalnie aktywny gdy gracze są blisko. Jedyny duch, który nigdy nie wywoła wydarzenia z \"chmurą powietrza\" lub \"białym dymem\". Jeśli widzisz dym frontalnie, wyklucz Oni."
+    },
+    "yokai": {
+      "name": "Yokai",
+      "summary": "Bardzo głuchy i ślepy.",
+      "detail": "Może wykryć twoją latarkę, głos lub sprzęt tylko w ~2.5 metra podczas polowania. Jeśli dużo mówisz blisko niego poza polowaniem, złości się i może polować przy 80% poczytalności."
+    },
+    "hantu": {
+      "name": "Hantu",
+      "summary": "Zmienna prędkość zależna od temperatury.",
+      "detail": "Kocha zimno, więc nigdy nie włączy bezpiecznika. Podczas polowania przy wyłączonym bezpieczniku wydycha mroźny oddech. Bardzo szybki w zimnych pokojach, ale super wolny w ciepłym domu. Nie przyspiesza od kontaktu wzrokowego."
+    },
+    "goryo": {
+      "name": "Goryo",
+      "summary": "Nie zmienia ulubionego pokoju.",
+      "detail": "Prawie nigdy nie oddala się od swojej strefy. Dowód DOTS widoczny tylko przez kamerę wideo i tylko gdy nikogo nie ma w pokoju. Gołym okiem nigdy go nie zobaczysz."
+    },
+    "myling": {
+      "name": "Myling",
+      "summary": "Kroki niesłyszalne poza zasięgiem migania latarki.",
+      "detail": "Kroki normalnego ducha słychać z 20 metrów. Myling jest cichy; jego kroki słychać z 10 metrów, dokładnie tam gdzie latarka zaczyna migać. Jeśli latarka miga przed usłyszeniem kroków, to Myling."
+    },
+    "onryo": {
+      "name": "Onryo",
+      "summary": "Świece działają jak krucyfiks.",
+      "detail": "Boi się ognia. Zapalona świeca działa jak krucyfiks w promieniu 4 metrów. Jeśli zdmuchnie 3 świece (bez innego ognia lub krucyfiksów), rozpocznie obowiązkowe polowanie. Normalnie poluje przy 60%."
+    },
+    "twins": {
+      "name": "Bliźniaki",
+      "summary": "Jeden szybszy, drugi wolniejszy.",
+      "detail": "W rzeczywistości jeden duch i \"byt interakcji\" który go śledzi. Mogą działać niemal jednocześnie w różnych pokojach (Twinteractions). Polowanie z głównego pokoju — 90% normalnej prędkości. \"Fałszywy\" bliźniak — 110%."
+    },
+    "raiju": {
+      "name": "Raiju",
+      "summary": "Przyspiesza ze sprzętem elektronicznym.",
+      "detail": "Poluje przy 65% poczytalności, jeśli sprzęt elektroniczny jest włączony w pobliżu. Podczas polowania każde włączone urządzenie daje ogromny boost prędkości. Zasięg zakłóceń większy (15 metrów vs 10)."
+    },
+    "obake": {
+      "name": "Obake",
+      "summary": "Zmienia model podczas polowania.",
+      "detail": "Podczas polowania 6.66% szans przy każdym mignięciu na krótką zmianę modelu. Z dowodami: 25% szans na NIE zostawienie odcisków. Gdy zostawia — 6 palców (drzwi) lub 2 (przełączniki). Znikają w 1 minutę zamiast 2."
+    },
+    "mimic": {
+      "name": "Mimik",
+      "summary": "Zawsze pokazuje orby.",
+      "detail": "Jedyny duch z 4 dowodami (orby to jego \"fałszywy\" pasywny dowód, zawsze obecne). Podczas meczu wybiera losowego ducha i kopiuje absolutnie wszystko. Może zmieniać kopię co 30 sekund lub 2 minuty."
+    },
+    "moroi": {
+      "name": "Moroi",
+      "summary": "Kadzidło oślepia na 7.5 sek. Bardzo szybki przy niskiej poczytalności.",
+      "detail": "Bazowa prędkość rośnie gdy poczytalność drużyny spada. Przy 0% jest najszybszym bazowym duchem. Odpowiedzi w Spirit Boxie \"przeklinają\" cię. Poczytalność spada dwa razy szybciej. Tylko tabletki poczytalności łamią klątwę."
+    },
+    "deogen": {
+      "name": "Deogen",
+      "summary": "Zawsze cię znajduje, bardzo wolny blisko.",
+      "detail": "Poluje przy 40% poczytalności. Nie próbuj się chować — ma \"wallhack\". Na początku polowania pędzi ku tobie, ale w kilku metrach zwalnia do 0.4 m/s. Aby przeżyć, \"kajtuj\" go w otwartych przestrzeniach. W Spirit Boxie — charakterystyczny ciężki oddech."
+    },
+    "thaye": {
+      "name": "Thaye",
+      "summary": "Szybki na początku, starzeje się i zwalnia.",
+      "detail": "Duch \"wyścig z czasem\". Wchodząc do domu poluje przy 75% i jest nadzwyczaj szybki. Jeśli jesteś blisko, co 1-2 minuty \"starzeje się\". Próg polowania i prędkość drastycznie spadają. Pod koniec meczu jest najwolniejszym duchem."
+    }
+  }
+}

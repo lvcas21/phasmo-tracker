@@ -1,10 +1,13 @@
 import { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ghosts } from './data/ghosts';
 import EvidencePanel from './components/EvidencePanel';
 import GhostGrid from './components/GhostGrid';
+import LanguageSelector from './components/LanguageSelector';
 import './App.css';
 
 export default function App() {
+  const { t } = useTranslation();
   const [evidenceFilters, setEvidenceFilters] = useState({});
   const [search, setSearch] = useState('');
 
@@ -49,9 +52,12 @@ export default function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <div className="header-glow" />
-        <h1>Phasmo Tracker</h1>
-        <p>Identifica al fantasma descartando opciones</p>
+        <div className="header-glow-clip">
+          <div className="header-glow" />
+        </div>
+        <LanguageSelector />
+        <h1>{t('header.title')}</h1>
+        <p>{t('header.subtitle')}</p>
       </header>
 
       <div className="app-layout">
@@ -63,7 +69,7 @@ export default function App() {
           />
           {activeCount > 0 && (
             <div className="active-filters">
-              {activeCount} filtro{activeCount !== 1 ? 's' : ''} activo{activeCount !== 1 ? 's' : ''}
+              {t('filters.active', { count: activeCount })}
             </div>
           )}
         </aside>
@@ -77,7 +83,7 @@ export default function App() {
             <input
               type="text"
               className="search-input"
-              placeholder="Buscar fantasma..."
+              placeholder={t('search.placeholder')}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />

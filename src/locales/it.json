@@ -1,0 +1,157 @@
+{
+  "header": {
+    "title": "Phasmo Tracker",
+    "subtitle": "Identifica il fantasma escludendo le opzioni"
+  },
+  "search": {
+    "placeholder": "Cerca fantasma..."
+  },
+  "filters": {
+    "active_one": "{{count}} filtro attivo",
+    "active_other": "{{count}} filtri attivi"
+  },
+  "evidence": {
+    "title": "Prove",
+    "reset": "Resetta tutto",
+    "tooltip_confirm": "Clic: conferma",
+    "tooltip_discard": "Clic: escludi",
+    "tooltip_reset": "Clic: resetta",
+    "emf": "EMF Livello 5",
+    "spiritBox": "Spirit Box",
+    "ultraviolet": "Ultravioletto",
+    "orbs": "Ghost Orbs",
+    "writing": "Scrittura Fantasma",
+    "freezing": "Temp. Gelida",
+    "dots": "DOTS"
+  },
+  "ghostGrid": {
+    "possible_one": "{{count}} fantasma possibile",
+    "possible_other": "{{count}} fantasmi possibili"
+  },
+  "ghostCard": {
+    "detail": "Dettaglio",
+    "less": "Meno"
+  },
+  "ghosts": {
+    "spirit": {
+      "name": "Spirito",
+      "summary": "Impiega 3 minuti per cacciare dopo l'incenso.",
+      "detail": "Il fantasma \"standard\". Non ha altre abilità speciali. Normalmente, l'incenso impedisce una caccia per 90 secondi; per lo Spirito sono 180 secondi. Se stai giocando senza prove e testi l'incenso, usa un cronometro."
+    },
+    "wraith": {
+      "name": "Spettro",
+      "summary": "Non calpesta il sale.",
+      "detail": "Letteralmente fluttua sopra il sale, non lasciando mai un'impronta (anche se può lasciare impronte digitali sulle porte). Può teletrasportarsi direttamente da un giocatore casuale (lasciando un EMF livello 2 o 5 nella tua posizione). Se hai improvvisamente attività lontano dalla sua stanza, potrebbe essere uno Spettro."
+    },
+    "phantom": {
+      "name": "Fantasma",
+      "summary": "Lampeggiamento molto lento e non appare nelle foto.",
+      "detail": "Durante una caccia, è invisibile molto più a lungo degli altri fantasmi. Se scatti una foto durante un evento, il fantasma scomparirà immediatamente, ma la foto sarà perfettamente valida. Guardarlo abbassa la tua sanità molto velocemente."
+    },
+    "poltergeist": {
+      "name": "Poltergeist",
+      "summary": "Lancia molti oggetti con grande forza.",
+      "detail": "Lancia oggetti molto più lontano e con più forza. La \"Bomba Poltergeist\": può lanciare più oggetti contemporaneamente. Ogni oggetto lanciato vicino a te drena il 2% della tua sanità. Se fai una pila di oggetti nella sua stanza e volano tutti insieme, è un Poltergeist."
+    },
+    "banshee": {
+      "name": "Banshee",
+      "summary": "Emette un urlo speciale e insegue un solo bersaglio.",
+      "detail": "L'urlo speciale si sente solo con il Microfono Parabolico. All'inizio della partita, sceglie un solo giocatore. Caccia basandosi solo sulla sanità di quel giocatore. Durante una caccia, se il bersaglio non è in casa, caccia normalmente. Se il bersaglio è dentro, ignorerà gli altri giocatori per ucciderlo."
+    },
+    "jinn": {
+      "name": "Jinn",
+      "summary": "Accelera con il quadro elettrico acceso; non lo spegne mai.",
+      "detail": "Non spegne mai direttamente il quadro elettrico. Se ti vede da lontano in un corridoio con la luce accesa, correrà verso di te velocissimo, ma tornerà alla velocità normale avvicinandosi a circa 3 metri. Se spegni il quadro, diventa un fantasma standard."
+    },
+    "mare": {
+      "name": "Incubo",
+      "summary": "Spegne la luce immediatamente quando la accendi.",
+      "detail": "Odia la luce. Ha più probabilità di far esplodere le lampadine durante un evento. Al buio, può cacciare al 60% di sanità. Se la luce è accesa, deve aspettare che scendi al 40%. Non accenderà mai una luce da solo."
+    },
+    "revenant": {
+      "name": "Revenant",
+      "summary": "Lento quando non ti rileva, molto veloce quando ti vede.",
+      "detail": "Se non sa dove sei, cammina a 1.0 m/s. Nel millisecondo in cui ha contatto visivo continuo o ti sente, accelera a 3.0 m/s fino alla tua ultima posizione nota. Se interrompi la linea visiva, rallenta gradualmente."
+    },
+    "shade": {
+      "name": "Ombra",
+      "summary": "Molto inattivo.",
+      "detail": "Estremamente timido. NON PUÒ iniziare una caccia se qualcuno è nella stessa stanza. Inoltre, caccia solo quando la sanità media scende al 35%. Ti costringerà a essere quasi pazzo per provare la sua esistenza."
+    },
+    "demon": {
+      "name": "Demone",
+      "summary": "Caccia molto spesso.",
+      "detail": "Caccia normalmente al 70% di sanità, ma ha un'abilità passiva che gli permette di cacciare al 100%. Il crocifisso è super efficace contro di lui (raggio di 5 metri invece di 3). L'incenso impedisce la caccia solo per 60 secondi (invece di 90)."
+    },
+    "yurei": {
+      "name": "Yurei",
+      "summary": "Chiude le porte con un \"clic\".",
+      "detail": "Ha un'abilità che drena il 15% di sanità a tutti i vicini. Quando la usa, chiude rapidamente una porta spalancata. Se usi l'incenso nella sua stanza, resta intrappolato per 90 secondi."
+    },
+    "oni": {
+      "name": "Oni",
+      "summary": "Lampeggiamento frequente.",
+      "detail": "L'opposto del Fantasma. Durante una caccia, è molto visibile. Estremamente attivo quando i giocatori sono vicini. È l'unico fantasma che non farà mai l'evento paranormale della \"nuvola d'aria\" o \"fumo bianco\". Se vedi il fumo frontalmente, escludi l'Oni."
+    },
+    "yokai": {
+      "name": "Yokai",
+      "summary": "Molto sordo e cieco.",
+      "detail": "Può rilevare la tua torcia, voce o attrezzatura solo se sei a circa 2.5 metri durante una caccia. Se parli molto vicino a lui fuori dalla caccia, si arrabbia e può cacciare all'80% di sanità."
+    },
+    "hantu": {
+      "name": "Hantu",
+      "summary": "Velocità variabile in base alla temperatura.",
+      "detail": "Ama il freddo, quindi non accenderà mai il quadro elettrico. Durante una caccia, se il quadro è spento, esala un respiro gelido. Molto veloce nelle stanze fredde, ma super lento se la casa è calda. Non accelera con il contatto visivo come altri fantasmi."
+    },
+    "goryo": {
+      "name": "Goryo",
+      "summary": "Non cambia la sua stanza preferita.",
+      "detail": "Non si avventura quasi mai lontano dalla sua zona. La prova DOTS può essere vista solo tramite videocamera e solo quando nessuno è fisicamente nella stanza. Ad occhio nudo non lo vedrai mai."
+    },
+    "myling": {
+      "name": "Myling",
+      "summary": "Passi impercettibili fuori dal raggio di sfarfallio della torcia.",
+      "detail": "I passi di un fantasma normale si sentono a 20 metri. Il Myling è furtivo; i suoi passi si sentono solo a 10 metri, esattamente la distanza a cui la tua torcia inizia a sfarfallare. Se la torcia sfarfalla prima di sentire passi, è un Myling."
+    },
+    "onryo": {
+      "name": "Onryo",
+      "summary": "Le candele funzionano come un crocifisso.",
+      "detail": "Ha paura del fuoco. Una candela accesa funziona come un crocifisso in un raggio di 4 metri. Se spegne 3 candele in totale (senza altro fuoco o crocifissi), scatena una caccia obbligatoria. Caccia normalmente al 60%."
+    },
+    "twins": {
+      "name": "Gemelli",
+      "summary": "Uno più veloce, l'altro più lento.",
+      "detail": "In realtà è un fantasma e un'\"entità di interazione\" che lo segue. Possono agire quasi simultaneamente in stanze diverse (Twinteractions). Se caccia dalla stanza principale, va al 90% della velocità normale. Se il gemello \"falso\" caccia, va al 110%."
+    },
+    "raiju": {
+      "name": "Raiju",
+      "summary": "Accelera con l'attrezzatura elettronica.",
+      "detail": "Caccia al 65% di sanità se l'attrezzatura elettronica è accesa vicino a lui. Durante una caccia, qualsiasi dispositivo acceso gli dà un enorme boost di velocità. Il suo raggio di interferenza è maggiore (15 metri) rispetto agli altri (10 metri)."
+    },
+    "obake": {
+      "name": "Obake",
+      "summary": "Cambia modello durante una caccia.",
+      "detail": "Durante una caccia, c'è il 6.66% di probabilità ad ogni lampeggiamento di cambiare brevemente modello. Con prove: 25% di probabilità di NON lasciare impronte. Le sue impronte possono avere 6 dita (sulle porte) o 2 (sugli interruttori). Scompaiono in 1 minuto invece di 2."
+    },
+    "mimic": {
+      "name": "Mimetico",
+      "summary": "Mostra sempre le sfere.",
+      "detail": "L'unico fantasma del gioco con 4 prove (le sfere sono la sua prova \"falsa\" e passiva, sempre presenti). Durante la partita, sceglie un fantasma casuale e copia assolutamente tutto. Può cambiare il fantasma copiato ogni 30 secondi o 2 minuti."
+    },
+    "moroi": {
+      "name": "Moroi",
+      "summary": "L'incenso lo acceca per 7.5 sec. Molto veloce a bassa sanità.",
+      "detail": "La sua velocità base aumenta man mano che la sanità della squadra diminuisce. Allo 0%, è il fantasma base più veloce del gioco. Se senti le sue risposte alla Spirit Box, ti \"maledice\". La tua sanità scende il doppio più veloce. Solo le pillole di sanità spezzano la maledizione."
+    },
+    "deogen": {
+      "name": "Deogen",
+      "summary": "Ti trova sempre, molto lento quando è vicino.",
+      "detail": "Caccia al 40% di sanità. Non provare mai a nasconderti da un Deogen, ha il \"wallhack\". All'inizio di una caccia corre verso di te velocissimo, ma a pochi metri rallenta a 0.4 m/s. Per sopravvivere, devi \"kitarlo\" (fare cerchi in spazi aperti). Alla Spirit Box, ha un respiro affannoso molto caratteristico."
+    },
+    "thaye": {
+      "name": "Thaye",
+      "summary": "Veloce all'inizio, invecchia e diventa lento.",
+      "detail": "Il fantasma \"corsa contro il tempo\". Quando entri in casa, caccia al 75% di sanità ed è straordinariamente veloce. Se sei vicino a lui, ogni 1-2 minuti \"invecchia\". La sua soglia di caccia e velocità diminuiscono drasticamente. A fine partita, è il fantasma più lento del gioco."
+    }
+  }
+}

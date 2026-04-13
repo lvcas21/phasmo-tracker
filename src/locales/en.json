@@ -1,0 +1,157 @@
+{
+  "header": {
+    "title": "Phasmo Tracker",
+    "subtitle": "Identify the ghost by ruling out options"
+  },
+  "search": {
+    "placeholder": "Search ghost..."
+  },
+  "filters": {
+    "active_one": "{{count}} active filter",
+    "active_other": "{{count}} active filters"
+  },
+  "evidence": {
+    "title": "Evidence",
+    "reset": "Reset all",
+    "tooltip_confirm": "Click: confirm",
+    "tooltip_discard": "Click: rule out",
+    "tooltip_reset": "Click: reset",
+    "emf": "EMF Level 5",
+    "spiritBox": "Spirit Box",
+    "ultraviolet": "Ultraviolet",
+    "orbs": "Ghost Orbs",
+    "writing": "Ghost Writing",
+    "freezing": "Freezing Temps",
+    "dots": "DOTS"
+  },
+  "ghostGrid": {
+    "possible_one": "{{count}} possible ghost",
+    "possible_other": "{{count}} possible ghosts"
+  },
+  "ghostCard": {
+    "detail": "Detail",
+    "less": "Less"
+  },
+  "ghosts": {
+    "spirit": {
+      "name": "Spirit",
+      "summary": "Takes 3 minutes to hunt after using incense.",
+      "detail": "The \"standard\" ghost. It has no other special ability. Normally, incense prevents a hunt for 90 seconds; for the Spirit it's 180 seconds. If you're playing without evidence and test incense, use a stopwatch."
+    },
+    "wraith": {
+      "name": "Wraith",
+      "summary": "Does not step on salt.",
+      "detail": "It literally floats over salt, never leaving a footprint on it (though it can leave fingerprints on doors). It can teleport directly to a random player (leaving an EMF level 2 or 5 at your location). If you suddenly get activity far from its room, it could be a Wraith."
+    },
+    "phantom": {
+      "name": "Phantom",
+      "summary": "Very slow blinking and doesn't appear in photos.",
+      "detail": "During a hunt, it's invisible for much longer than other ghosts (its model almost completely disappears between blinks). If you take a photo during an event, the ghost will disappear immediately, but the photo will be perfectly valid (it'll say \"Ghost\") and won't have electronic distortion (glitch) in the menu. Looking at it drains your sanity very fast."
+    },
+    "poltergeist": {
+      "name": "Poltergeist",
+      "summary": "Throws many objects with great force.",
+      "detail": "Throws objects much farther and with more force. The \"Poltergeist Bomb\": it can throw multiple objects at once, creating an explosion of junk around it. Each object thrown near you drains 2% of your sanity. If you make a pile of objects in its room and they all go flying at once, it's a Poltergeist."
+    },
+    "banshee": {
+      "name": "Banshee",
+      "summary": "Emits a special scream and stalks a single target.",
+      "detail": "The special scream is only heard with the Parabolic Microphone. At the start of the match, it chooses a single player. It hunts based only on that player's sanity, ignoring everyone else. During a hunt, if the target isn't in the house, it hunts like a normal ghost. If the target is inside, it will ignore and pass through other players to kill them."
+    },
+    "jinn": {
+      "name": "Jinn",
+      "summary": "Speeds up with the breaker on; never turns off the breaker.",
+      "detail": "Never turns off the breaker box directly. If it sees you from far away in a hallway with the lights on, it'll rush toward you super fast, but return to normal speed when it gets within about 3 meters. If you turn off the breaker, it becomes a completely standard ghost and can't use its speed or its secret ability (which drains 25% sanity instantly if you're near it)."
+    },
+    "mare": {
+      "name": "Mare",
+      "summary": "Turns off lights immediately when turned on.",
+      "detail": "Hates light. Has a higher chance of breaking light bulbs during an event. In the dark, it can hunt at 60% sanity. If the room light is on, it has to wait until you drop to 40%. It will never turn on a light by itself."
+    },
+    "revenant": {
+      "name": "Revenant",
+      "summary": "Slow when it doesn't detect you, very fast when it sees you.",
+      "detail": "If it doesn't know where you are, it walks at 1.0 m/s (slower than normal). The millisecond it has continuous line of sight or hears you, it accelerates to 3.0 m/s (like a race car) to your last known location. If you break line of sight, it gradually slows down again."
+    },
+    "shade": {
+      "name": "Shade",
+      "summary": "Very inactive.",
+      "detail": "Extremely shy. It CANNOT start a hunt if someone is in the same room with it. Also, it only hunts when average sanity drops to 35% (others hunt at 50%). It will force you to be nearly insane to prove its existence."
+    },
+    "demon": {
+      "name": "Demon",
+      "summary": "Hunts very often.",
+      "detail": "Normally hunts at 70% sanity, but has a passive ability that lets it decide to hunt at 100% sanity right after opening the house door. The crucifix is super effective against it (5-meter range instead of 3). Incense only prevents hunting for 60 seconds (instead of the normal 90)."
+    },
+    "yurei": {
+      "name": "Yurei",
+      "summary": "Closes doors with a \"click\".",
+      "detail": "Has an ability that drains 15% sanity from everyone nearby. When it uses it, it quickly closes a door wide open. If you use incense in its room, it gets trapped in that room and can't leave or wander for 90 seconds."
+    },
+    "oni": {
+      "name": "Oni",
+      "summary": "Frequent blinking.",
+      "detail": "The opposite of the Phantom. During a hunt, it's very visible, its model barely disappears. Extremely active when players are nearby. It's the only ghost that will never do the paranormal event where an \"air cloud\" or \"white smoke\" chases you. If you see the smoke head-on, rule out the Oni."
+    },
+    "yokai": {
+      "name": "Yokai",
+      "summary": "Very deaf and blind.",
+      "detail": "Can only detect your flashlight, voice, or equipment if you're within about 2.5 meters of it during a hunt. You can literally talk in the same room and it might not hear you if it's not right next to you. However, if you talk a lot near it outside of a hunt, it gets angry and can hunt at 80% sanity."
+    },
+    "hantu": {
+      "name": "Hantu",
+      "summary": "Variable speed depending on temperature.",
+      "detail": "Loves the cold, so it will never turn on the breaker (to keep the house cold). During a hunt, if the breaker is off, it exhales cold breath. Very fast in cold rooms or freezing hallways, but if you turn on the heating (breaker) and the house is warm, it crawls super slow. Doesn't speed up with line of sight like other ghosts."
+    },
+    "goryo": {
+      "name": "Goryo",
+      "summary": "Doesn't change its favorite room.",
+      "detail": "Almost never ventures far from its area. The DOTS evidence (if playing with evidence) can only be seen through a video camera and only when nobody is physically in the room. You'll never see it with the naked eye."
+    },
+    "myling": {
+      "name": "Myling",
+      "summary": "Inaudible footsteps outside flashlight flicker range.",
+      "detail": "A normal ghost's footsteps are heard at 20 meters. The Myling is stealthy; its footsteps during a hunt are only heard at 10 meters, which is exactly the same distance at which your flashlight or walkie-talkie starts to flicker. If your flashlight flickers before you hear footsteps, it's a Myling. Makes tons of \"weird\" noises and vocals on the parabolic microphone."
+    },
+    "onryo": {
+      "name": "Onryo",
+      "summary": "Candles act as a crucifix.",
+      "detail": "Afraid of fire. A lit candle works like a crucifix and prevents it from hunting within a 4-meter radius (it will prioritize blowing out the candle before using up a crucifix). If it blows out 3 candles total (and there's no more fire or crucifixes), it triggers a mandatory hunt ignoring your sanity level. Normally hunts at 60%."
+    },
+    "twins": {
+      "name": "The Twins",
+      "summary": "One faster, one slower.",
+      "detail": "It's actually one ghost and an \"interaction entity\" that follows it. They can do things almost simultaneously in different rooms (Twinteractions). On the van's activity monitor, you'll see a curve with a break in the middle when this happens. If it hunts from the main room, it goes at 90% normal speed. If the \"fake\" twin hunts (from its last distant interaction), it goes at 110% speed."
+    },
+    "raiju": {
+      "name": "Raiju",
+      "summary": "Speeds up with electronic equipment.",
+      "detail": "Hunts at 65% sanity if electronic equipment is turned on near it. During a hunt, any camera, flashlight, or device turned on (on the ground or in your hand) gives it a huge speed boost. Its range for interfering with your equipment is greater (15 meters) than other ghosts (10 meters)."
+    },
+    "obake": {
+      "name": "Obake",
+      "summary": "Changes model during a hunt.",
+      "detail": "During a hunt, there's a 6.66% chance on each blink that it briefly changes to another ghost model before reverting. If playing with evidence: it has a 25% chance of NOT leaving fingerprints. When it does, they can have 6 fingers (on doors) or 2 (on switches). Its prints disappear in 1 minute instead of the usual 2."
+    },
+    "mimic": {
+      "name": "The Mimic",
+      "summary": "Always shows orbs.",
+      "detail": "The only ghost in the game with 4 evidences (orbs are its \"fake\" passive evidence, always present, even on \"Zero Evidence\" difficulty). During the match, it picks a random ghost and copies absolutely everything: hunt threshold, speed, special abilities. It can switch the copied ghost every 30 seconds or 2 minutes."
+    },
+    "moroi": {
+      "name": "Moroi",
+      "summary": "Incense blinds it for 7.5 sec. Very fast at low sanity.",
+      "detail": "Its base speed increases as team sanity decreases. At 0% sanity, it's the fastest base ghost in the game and also speeds up if it sees you. If you hear its responses on the Spirit Box or parabolic microphone, it \"curses\" you. Your sanity drops passively twice as fast as normal, and being in the light won't stop it. Only sanity pills break the curse."
+    },
+    "deogen": {
+      "name": "Deogen",
+      "summary": "Always finds you, very slow when close.",
+      "detail": "Hunts at 40% sanity. Never try to hide in a closet or behind boxes from a Deogen, because it has \"wallhack\" (knows exactly where you are). At the start of a hunt it rushes to your position super fast, but once it's a few meters from you, it slows to 0.4 m/s (almost slow motion). To survive, you need to \"kite\" it (run circles in open spaces). On the Spirit Box, it has a very distinctive heavy breathing."
+    },
+    "thaye": {
+      "name": "Thaye",
+      "summary": "Fast at first, ages and becomes slow.",
+      "detail": "The \"race against time\" ghost. When you enter the house, it hunts at 75% sanity and is extraordinarily fast (doesn't speed up seeing you, it's already fast by default). If you're near it, every 1 or 2 minutes it \"ages\". Each time it ages, its hunt threshold drops, it does less, and its speed decreases drastically. By the end of the match, it's the slowest ghost in the game and only hunts at 15% sanity. If you ask the Ouija board its age at the start and again 15 minutes later, the age will have changed."
+    }
+  }
+}

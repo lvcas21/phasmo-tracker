@@ -1,0 +1,157 @@
+{
+  "header": {
+    "title": "Phasmo Tracker",
+    "subtitle": "Identifica al fantasma descartando opciones"
+  },
+  "search": {
+    "placeholder": "Buscar fantasma..."
+  },
+  "filters": {
+    "active_one": "{{count}} filtro activo",
+    "active_other": "{{count}} filtros activos"
+  },
+  "evidence": {
+    "title": "Evidencias",
+    "reset": "Resetear todo",
+    "tooltip_confirm": "Click: confirmar",
+    "tooltip_discard": "Click: descartar",
+    "tooltip_reset": "Click: resetear",
+    "emf": "EMF Nivel 5",
+    "spiritBox": "Spirit Box",
+    "ultraviolet": "Ultravioleta",
+    "orbs": "Ghost Orbs",
+    "writing": "Escritura Fantasma",
+    "freezing": "Temp. Congelante",
+    "dots": "DOTS"
+  },
+  "ghostGrid": {
+    "possible_one": "{{count}} fantasma posible",
+    "possible_other": "{{count}} fantasmas posibles"
+  },
+  "ghostCard": {
+    "detail": "Detalle",
+    "less": "Menos"
+  },
+  "ghosts": {
+    "spirit": {
+      "name": "Espíritu",
+      "summary": "Tarda 3 minutos en cazar tras usar incienso.",
+      "detail": "Es el fantasma \"estándar\". No tiene ninguna otra habilidad. En un fantasma normal, el incienso previene la cacería por 90 segundos; en el Espíritu son 180 segundos. Si estás jugando sin evidencias y pruebas el incienso, usa un cronómetro."
+    },
+    "wraith": {
+      "name": "Espectro",
+      "summary": "No pisa la sal.",
+      "detail": "Literalmente flota sobre la sal, nunca dejará una pisada en ella (aunque sí puede dejar huellas dactilares en puertas). Puede teletransportarse directamente a un jugador al azar (dejando un EMF nivel 2 o 5 en tu ubicación). Si de repente tienes actividad lejos de su habitación, puede ser un Espectro."
+    },
+    "phantom": {
+      "name": "Ente",
+      "summary": "Parpadeo muy lento y no sale en fotos.",
+      "detail": "Durante una cacería, es invisible por mucho más tiempo que los demás fantasmas (su modelo desaparece casi por completo entre parpadeos). Si le tomas una foto durante un evento, el fantasma desaparecerá inmediatamente, pero la foto será perfectamente válida (dirá \"Fantasma\") y no tendrá distorsión electrónica (glitch) en el menú. Mirarlo baja tu cordura rapidísimo."
+    },
+    "poltergeist": {
+      "name": "Poltergeist",
+      "summary": "Lanza muchos objetos con gran potencia.",
+      "detail": "Lanza objetos mucho más lejos y con más fuerza. El \"Poltergeist Bomb\": puede lanzar múltiples objetos a la vez, creando una explosión de basura a su alrededor. Cada objeto que lanza cerca de ti drena 2% de tu cordura. Si haces una pila de objetos en su habitación y salen volando todos a la vez, es un Poltergeist."
+    },
+    "banshee": {
+      "name": "Banshee",
+      "summary": "Emite un grito especial y acosa a un solo objetivo.",
+      "detail": "El grito especial solo se escucha con el Micrófono Parabólico. Al iniciar la partida, elige a un solo jugador. Caza basándose solo en la cordura de ese jugador, ignorando a los demás. Durante una cacería, si el objetivo no está en la casa, cazará como un fantasma normal. Si el objetivo está dentro, ignorará y atravesará a los demás jugadores para matarlo."
+    },
+    "jinn": {
+      "name": "Jinn",
+      "summary": "Acelera con los plomos encendidos; no apaga el cuadro.",
+      "detail": "Nunca apaga la caja de luz de forma directa. Si te ve de lejos en un pasillo y la luz está dada, irá rapidísimo hacia ti, pero volverá a velocidad normal al acercarse a unos 3 metros. Si apagas los plomos, es un fantasma completamente estándar y no puede usar su velocidad ni su habilidad secreta (que drena 25% de cordura de golpe si estás cerca de él)."
+    },
+    "mare": {
+      "name": "Pesadilla",
+      "summary": "Apaga la luz inmediatamente al encenderla.",
+      "detail": "Odia la luz. Tiene mayor probabilidad de reventar las bombillas en un evento. Si estás a oscuras, puede cazar al 60% de cordura. Si la luz de la habitación está encendida, tiene que esperar a que bajes al 40%. Jamás encenderá una luz por sí mismo."
+    },
+    "revenant": {
+      "name": "Revenant",
+      "summary": "Lento si no te detecta, muy rápido cuando te ve.",
+      "detail": "Si no sabe dónde estás, camina a 1.0 m/s (más lento de lo normal). En el milisegundo en que tiene contacto visual continuo o te escucha, acelera a 3.0 m/s (como un coche de carreras) hasta tu última ubicación conocida. Si rompes línea de visión, vuelve a ir lento poco a poco."
+    },
+    "shade": {
+      "name": "Sombra",
+      "summary": "Muy inactivo.",
+      "detail": "Es excesivamente tímido. NO puede iniciar una cacería si hay alguien dentro de la misma habitación con él. Además, solo caza cuando el promedio de cordura baja al 35% (los demás lo hacen al 50%). Te obligará a estar casi sin cordura para poder probar su existencia."
+    },
+    "demon": {
+      "name": "Demonio",
+      "summary": "Caza muy seguido.",
+      "detail": "Caza normalmente al 70% de cordura, pero tiene una habilidad pasiva con la que puede decidir cazar al 100% de cordura nada más abrir la puerta de la casa. El crucifijo es súper efectivo contra él (tiene un rango de 5 metros en lugar de 3). El incienso solo evita que cace por 60 segundos (en lugar de los 90 normales)."
+    },
+    "yurei": {
+      "name": "Yurei",
+      "summary": "Cierra puertas con un \"clic\".",
+      "detail": "Tiene una habilidad que drena un 15% de cordura a todos los que estén cerca. Cuando la usa, cierra rápidamente una puerta de par en par. Si usas incienso en su habitación, se quedará atrapado en esa sala y no podrá salir ni deambular durante 90 segundos."
+    },
+    "oni": {
+      "name": "Oni",
+      "summary": "Parpadeo frecuente.",
+      "detail": "Es lo opuesto al Ente. Durante la cacería, es muy visible, su modelo apenas desaparece. Es extremadamente activo si hay jugadores cerca de él. Es el único fantasma que nunca hará el evento paranormal donde te persigue una \"nube de aire\" o \"humo blanco\". Si ves el humo de frente, descarta al Oni."
+    },
+    "yokai": {
+      "name": "Yokai",
+      "summary": "Muy sordo y ciego.",
+      "detail": "Solo puede detectar tu linterna, tu voz o tus aparatos si estás a unos 2.5 metros de él durante una cacería. Puedes literalmente hablar en la misma habitación y puede que no te escuche si no está pegado a ti. Sin embargo, si hablas mucho cerca de él fuera de cacería, se enfadará y podrá cazar al 80% de cordura."
+    },
+    "hantu": {
+      "name": "Hantu",
+      "summary": "Velocidad variable según la temperatura.",
+      "detail": "Le encanta el frío, así que jamás encenderá los plomos (para mantener la casa fría). En una cacería, si los plomos están apagados, soltará vaho helado por la boca. Es rapidísimo en habitaciones frías o pasillos helados, pero si enciendes la calefacción (plomos) y la casa está caliente, irá arrastrándose, súper lento. No acelera con contacto visual como otros fantasmas."
+    },
+    "goryo": {
+      "name": "Goryo",
+      "summary": "No cambia su habitación favorita.",
+      "detail": "Casi nunca sale de excursión lejos de su zona. La prueba del DOTS (si juegas con evidencias) solo se puede ver a través de una cámara de video y solo si no hay nadie físicamente en la habitación. A simple vista nunca lo verás."
+    },
+    "myling": {
+      "name": "Myling",
+      "summary": "Pasos inaudibles fuera del parpadeo de linterna.",
+      "detail": "Los pasos de un fantasma normal se escuchan a 20 metros. El Myling es sigiloso; sus pasos en cacería solo se escuchan a 10 metros, que es exactamente la misma distancia a la que tu linterna o walkie-talkie empieza a fallar. Si tu linterna falla antes de que escuches pasos, es un Myling. Hace muchísimos ruidos \"raros\" y vocales en el micrófono parabólico."
+    },
+    "onryo": {
+      "name": "Onryo",
+      "summary": "Las velas actúan como crucifijo.",
+      "detail": "Tiene miedo al fuego. Una vela encendida funciona como un crucifijo y evita que cace si está en un radio de 4 metros (priorizará apagar la vela antes que comerse un crucifijo). Si apaga 3 velas en total (y no hay más fuego o crucifijos), iniciará una cacería obligatoria ignorando tu nivel de cordura. Caza normalmente al 60%."
+    },
+    "twins": {
+      "name": "Gemelos",
+      "summary": "Uno más rápido, otro más lento.",
+      "detail": "En realidad es un fantasma y un \"ente de interacción\" que lo sigue. Pueden hacer cosas casi al mismo tiempo en habitaciones diferentes (Twinteractions). En el monitor de actividad de la furgoneta, se ve una curva con un quiebre en medio cuando esto pasa. Si caza desde la habitación principal, irá al 90% de la velocidad normal. Si caza el gemelo \"falso\" (desde donde hizo la última interacción lejos), irá al 110% de velocidad."
+    },
+    "raiju": {
+      "name": "Raiju",
+      "summary": "Acelera con equipo electrónico.",
+      "detail": "Caza al 65% de cordura si hay equipos electrónicos encendidos cerca de él. Durante la cacería, cualquier cámara, linterna o aparato encendido en el suelo o en tu mano le dará un turbo tremendo. Su rango para interferir y volver locos tus aparatos es mayor (15 metros) que el del resto (10 metros)."
+    },
+    "obake": {
+      "name": "Obake",
+      "summary": "Cambia de modelo durante la cacería.",
+      "detail": "Durante una cacería, hay un 6.66% de probabilidad en cada parpadeo de que cambie brevemente a otro modelo de fantasma antes de volver al suyo. Si juegas con evidencias: tiene un 25% de probabilidad de NO dejar huellas dactilares. Cuando las deja, pueden tener 6 dedos (en puertas) o 2 (en interruptores). Sus huellas desaparecen en 1 minuto en lugar de los 2 habituales."
+    },
+    "mimic": {
+      "name": "Mímico",
+      "summary": "Siempre muestra orbes.",
+      "detail": "Es el único fantasma del juego que tiene 4 evidencias (los orbes son su evidencia \"falsa\" y pasiva, siempre están ahí, incluso en dificultad \"Cero Evidencias\"). Durante la partida, escoge a un fantasma al azar y copia absolutamente todo de él: su umbral de caza, su velocidad, sus habilidades especiales. Puede cambiar de fantasma copiado cada 30 segundos o 2 minutos."
+    },
+    "moroi": {
+      "name": "Moroi",
+      "summary": "Incienso lo ciega 7.5 seg. Muy rápido si estás loco.",
+      "detail": "Su velocidad base aumenta a medida que disminuye la cordura del equipo. Con 0% de cordura, es el fantasma base más rápido del juego y además acelera si te ve. Si escuchas sus respuestas en la Spirit Box o en el micrófono parabólico, te \"maldice\". Tu cordura bajará pasivamente el doble de rápido de lo normal, y estar en la luz no lo detendrá. Solo las pastillas de cordura rompen la maldición."
+    },
+    "deogen": {
+      "name": "Deogen",
+      "summary": "Te localiza siempre, va muy lento cerca de ti.",
+      "detail": "Caza al 40% de cordura. Jamás intentes esconderte en un armario o detrás de cajas de un Deogen, porque tiene \"wallhack\" (sabe exactamente dónde estás). Al inicio de la caza irá rapidísimo hacia tu posición, pero en cuanto esté a unos pocos metros de ti, bajará su velocidad a 0.4 m/s (casi cámara lenta). Para sobrevivir, tienes que \"kitearlo\" (darle vueltas en círculos en espacios abiertos). En la Spirit Box, tiene una respiración agitada muy característica."
+    },
+    "thaye": {
+      "name": "Thaye",
+      "summary": "Rápido al inicio, envejece y se vuelve lento.",
+      "detail": "El fantasma \"contrarreloj\". Cuando entras a la casa, caza al 75% de cordura y es extraordinariamente rápido (y no acelera viéndote, ya es rápido de base). Si estás cerca de él, cada 1 o 2 minutos \"envejece\". Cada vez que envejece, su umbral de caza baja, hace menos cosas y su velocidad se reduce drásticamente. Al final de la partida, es el fantasma más lento del juego y caza solo al 15% de cordura. Si le preguntas la edad a la Ouija al inicio de la partida y luego otra vez 15 minutos después, la edad habrá cambiado."
+    }
+  }
+}

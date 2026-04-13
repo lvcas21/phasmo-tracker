@@ -1,0 +1,157 @@
+{
+  "header": {
+    "title": "Phasmo Tracker",
+    "subtitle": "Identifiez le fantôme en éliminant les options"
+  },
+  "search": {
+    "placeholder": "Rechercher un fantôme..."
+  },
+  "filters": {
+    "active_one": "{{count}} filtre actif",
+    "active_other": "{{count}} filtres actifs"
+  },
+  "evidence": {
+    "title": "Preuves",
+    "reset": "Tout réinitialiser",
+    "tooltip_confirm": "Clic : confirmer",
+    "tooltip_discard": "Clic : exclure",
+    "tooltip_reset": "Clic : réinitialiser",
+    "emf": "EMF Niveau 5",
+    "spiritBox": "Spirit Box",
+    "ultraviolet": "Ultraviolet",
+    "orbs": "Ghost Orbs",
+    "writing": "Écriture Fantôme",
+    "freezing": "Temp. Glaciale",
+    "dots": "DOTS"
+  },
+  "ghostGrid": {
+    "possible_one": "{{count}} fantôme possible",
+    "possible_other": "{{count}} fantômes possibles"
+  },
+  "ghostCard": {
+    "detail": "Détail",
+    "less": "Moins"
+  },
+  "ghosts": {
+    "spirit": {
+      "name": "Esprit",
+      "summary": "Met 3 minutes avant de chasser après l'encens.",
+      "detail": "Le fantôme \"standard\". Il n'a pas d'autre capacité spéciale. Normalement, l'encens empêche une chasse pendant 90 secondes ; pour l'Esprit c'est 180 secondes. Si vous jouez sans preuves et testez l'encens, utilisez un chronomètre."
+    },
+    "wraith": {
+      "name": "Spectre",
+      "summary": "Ne marche pas sur le sel.",
+      "detail": "Il flotte littéralement au-dessus du sel, ne laissant jamais d'empreinte de pas (bien qu'il puisse laisser des empreintes digitales sur les portes). Il peut se téléporter directement vers un joueur aléatoire (laissant un EMF niveau 2 ou 5 à votre position). Si vous avez soudainement de l'activité loin de sa pièce, ça pourrait être un Spectre."
+    },
+    "phantom": {
+      "name": "Fantôme",
+      "summary": "Clignotement très lent et n'apparaît pas sur les photos.",
+      "detail": "Pendant une chasse, il est invisible beaucoup plus longtemps que les autres fantômes. Si vous prenez une photo pendant un événement, le fantôme disparaîtra immédiatement, mais la photo sera parfaitement valide. Le regarder draine votre sanité très rapidement."
+    },
+    "poltergeist": {
+      "name": "Poltergeist",
+      "summary": "Lance beaucoup d'objets avec une grande force.",
+      "detail": "Lance les objets beaucoup plus loin et avec plus de force. La \"Bombe Poltergeist\" : il peut lancer plusieurs objets à la fois. Chaque objet lancé près de vous draine 2% de votre sanité. Si vous faites un tas d'objets dans sa pièce et qu'ils s'envolent tous, c'est un Poltergeist."
+    },
+    "banshee": {
+      "name": "Banshee",
+      "summary": "Émet un cri spécial et traque une seule cible.",
+      "detail": "Le cri spécial ne s'entend qu'avec le Microphone Parabolique. Au début de la partie, elle choisit un seul joueur. Elle chasse en se basant uniquement sur la sanité de ce joueur. Pendant une chasse, si la cible n'est pas dans la maison, elle chasse normalement. Si la cible est à l'intérieur, elle ignorera les autres joueurs pour le tuer."
+    },
+    "jinn": {
+      "name": "Djinn",
+      "summary": "Accélère avec le disjoncteur allumé ; ne l'éteint jamais.",
+      "detail": "N'éteint jamais le disjoncteur directement. S'il vous voit de loin dans un couloir avec la lumière allumée, il foncera vers vous très vite, mais reviendra à vitesse normale en s'approchant à environ 3 mètres. Si vous éteignez le disjoncteur, il devient un fantôme standard."
+    },
+    "mare": {
+      "name": "Cauchemar",
+      "summary": "Éteint la lumière immédiatement quand on l'allume.",
+      "detail": "Déteste la lumière. A plus de chances de faire exploser les ampoules lors d'un événement. Dans le noir, il peut chasser à 60% de sanité. Si la lumière est allumée, il doit attendre que vous descendiez à 40%. Il n'allumera jamais une lumière de lui-même."
+    },
+    "revenant": {
+      "name": "Revenant",
+      "summary": "Lent quand il ne vous détecte pas, très rapide quand il vous voit.",
+      "detail": "S'il ne sait pas où vous êtes, il marche à 1.0 m/s. Dès qu'il a un contact visuel continu ou vous entend, il accélère à 3.0 m/s jusqu'à votre dernière position connue. Si vous brisez la ligne de vue, il ralentit progressivement."
+    },
+    "shade": {
+      "name": "Ombre",
+      "summary": "Très inactif.",
+      "detail": "Extrêmement timide. NE PEUT PAS commencer une chasse si quelqu'un est dans la même pièce. Ne chasse que quand la sanité moyenne tombe à 35%. Il vous forcera à être presque fou pour prouver son existence."
+    },
+    "demon": {
+      "name": "Démon",
+      "summary": "Chasse très souvent.",
+      "detail": "Chasse normalement à 70% de sanité, mais a une capacité passive qui lui permet de chasser à 100% dès l'ouverture de la porte. Le crucifix est super efficace contre lui (portée de 5 mètres au lieu de 3). L'encens n'empêche la chasse que pendant 60 secondes (au lieu de 90)."
+    },
+    "yurei": {
+      "name": "Yurei",
+      "summary": "Ferme les portes avec un \"clic\".",
+      "detail": "A une capacité qui draine 15% de sanité à tous ceux qui sont proches. Quand il l'utilise, il ferme rapidement une porte grand ouverte. Si vous utilisez l'encens dans sa pièce, il reste piégé pendant 90 secondes."
+    },
+    "oni": {
+      "name": "Oni",
+      "summary": "Clignotement fréquent.",
+      "detail": "L'opposé du Fantôme. Pendant une chasse, il est très visible. Extrêmement actif quand des joueurs sont proches. C'est le seul fantôme qui ne fera jamais l'événement paranormal du \"nuage d'air\" ou \"fumée blanche\". Si vous voyez la fumée de face, éliminez l'Oni."
+    },
+    "yokai": {
+      "name": "Yokai",
+      "summary": "Très sourd et aveugle.",
+      "detail": "Ne peut détecter votre lampe, voix ou équipement que si vous êtes à environ 2.5 mètres de lui pendant une chasse. Cependant, si vous parlez beaucoup près de lui hors chasse, il s'énerve et peut chasser à 80% de sanité."
+    },
+    "hantu": {
+      "name": "Hantu",
+      "summary": "Vitesse variable selon la température.",
+      "detail": "Adore le froid, donc n'allumera jamais le disjoncteur. Pendant une chasse, si le disjoncteur est éteint, il exhale un souffle glacé. Très rapide dans les pièces froides, mais super lent si la maison est chaude. N'accélère pas avec le contact visuel comme les autres fantômes."
+    },
+    "goryo": {
+      "name": "Goryo",
+      "summary": "Ne change pas sa pièce favorite.",
+      "detail": "Ne s'aventure presque jamais loin de sa zone. La preuve DOTS ne peut être vue qu'à travers une caméra vidéo et seulement quand personne n'est physiquement dans la pièce. À l'œil nu, vous ne le verrez jamais."
+    },
+    "myling": {
+      "name": "Myling",
+      "summary": "Pas inaudibles hors de la portée du scintillement de la lampe.",
+      "detail": "Les pas d'un fantôme normal s'entendent à 20 mètres. Le Myling est furtif ; ses pas ne s'entendent qu'à 10 mètres, exactement la distance à laquelle votre lampe commence à clignoter. Si votre lampe clignote avant d'entendre des pas, c'est un Myling."
+    },
+    "onryo": {
+      "name": "Onryo",
+      "summary": "Les bougies fonctionnent comme un crucifix.",
+      "detail": "A peur du feu. Une bougie allumée fonctionne comme un crucifix dans un rayon de 4 mètres. S'il éteint 3 bougies au total (sans autre feu ou crucifix), il déclenche une chasse obligatoire. Chasse normalement à 60%."
+    },
+    "twins": {
+      "name": "Jumeaux",
+      "summary": "L'un plus rapide, l'autre plus lent.",
+      "detail": "C'est en fait un fantôme et une \"entité d'interaction\" qui le suit. Ils peuvent agir presque simultanément dans différentes pièces (Twinteractions). S'il chasse depuis la pièce principale, il va à 90% de la vitesse normale. Si le \"faux\" jumeau chasse, il va à 110%."
+    },
+    "raiju": {
+      "name": "Raiju",
+      "summary": "Accélère avec l'équipement électronique.",
+      "detail": "Chasse à 65% de sanité si de l'équipement électronique est allumé près de lui. Pendant une chasse, tout appareil allumé lui donne un énorme boost de vitesse. Sa portée d'interférence est plus grande (15 mètres) que celle des autres (10 mètres)."
+    },
+    "obake": {
+      "name": "Obake",
+      "summary": "Change de modèle pendant une chasse.",
+      "detail": "Pendant une chasse, il y a 6.66% de chance à chaque clignotement qu'il change brièvement de modèle. Avec preuves : 25% de chance de NE PAS laisser d'empreintes. Quand il en laisse, elles peuvent avoir 6 doigts (sur les portes) ou 2 (sur les interrupteurs). Ses empreintes disparaissent en 1 minute au lieu de 2."
+    },
+    "mimic": {
+      "name": "Mimique",
+      "summary": "Montre toujours des orbes.",
+      "detail": "Le seul fantôme du jeu avec 4 preuves (les orbes sont sa preuve \"fausse\" et passive, toujours présents). Pendant la partie, il choisit un fantôme au hasard et copie absolument tout. Il peut changer de fantôme copié toutes les 30 secondes ou 2 minutes."
+    },
+    "moroi": {
+      "name": "Moroi",
+      "summary": "L'encens l'aveugle 7.5 sec. Très rapide à faible sanité.",
+      "detail": "Sa vitesse de base augmente à mesure que la sanité de l'équipe diminue. À 0%, c'est le fantôme de base le plus rapide du jeu. Si vous entendez ses réponses à la Spirit Box ou au micro parabolique, il vous \"maudit\". Votre sanité baisse deux fois plus vite. Seules les pilules de sanité brisent la malédiction."
+    },
+    "deogen": {
+      "name": "Deogen",
+      "summary": "Vous trouve toujours, très lent quand il est proche.",
+      "detail": "Chasse à 40% de sanité. N'essayez jamais de vous cacher d'un Deogen, car il a un \"wallhack\" (sait exactement où vous êtes). Au début d'une chasse, il fonce vers vous, mais à quelques mètres il ralentit à 0.4 m/s. Pour survivre, faites-lui des cercles dans les espaces ouverts. À la Spirit Box, il a une respiration haletante très caractéristique."
+    },
+    "thaye": {
+      "name": "Thaye",
+      "summary": "Rapide au début, vieillit et devient lent.",
+      "detail": "Le fantôme \"course contre la montre\". Quand vous entrez dans la maison, il chasse à 75% de sanité et est extraordinairement rapide. Si vous êtes près de lui, toutes les 1 ou 2 minutes il \"vieillit\". Son seuil de chasse baisse et sa vitesse diminue drastiquement. En fin de partie, c'est le fantôme le plus lent du jeu."
+    }
+  }
+}
